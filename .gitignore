@@ -1,0 +1,47 @@
+# ROS 2 build directories (even if at workspace root)
+../build/
+../install/
+../log/
+
+# Common large files
+*.bag
+*.db3
+*.pth
+*.onnx
+*.weights
+*.tar.*
+*.zip
+
+# Generated
+*.pyc
+__pycache__/
+
+# IDE
+.idea/
+.vscode/
+
+# C++ build-related (often generated in-package during development)
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+DartConfiguration.tcl
+
+# Compiled object files and binaries (sometimes appear if building in-source — avoid this!)
+*.o
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+
+# Other common CMake temp files
+*.cbp  # Code::Blocks project files (if anyone uses it)
+*.layout
+
+# If you use clangd or other LSP tools
+.compile_commands.json  # Optional: some people commit this for IDE support, most don't
