@@ -15,6 +15,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   # add the name of custom interface(s) here
   "msg/HardwareStatus.msg"
+  "srv/ResetCounter.srv"
 )
 ament_export_dependencies(rosidl_default_runtime)
 
